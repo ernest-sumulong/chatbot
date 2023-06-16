@@ -8,6 +8,18 @@ const MessageParser = ({ children, actions }) => {
             actions.handleHello();
         }
 
+        if(message.includes('Did you know me?')) {
+            actions.handleDev();
+        }
+
+        if(message.includes('weather update')) {
+            actions.handleWeather();
+        }
+
+        if(message.includes('dog')) {
+            actions.handleDog();
+        }
+
         //console.log(message);
     };
 
